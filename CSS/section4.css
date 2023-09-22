@@ -1,0 +1,129 @@
+.section4__tittle {
+    display: flex;
+width: 371.615px;
+height: 80px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #0B132A;
+font-family: Rubik;
+font-size: 35px;
+font-weight: 500;
+line-height: 45px; /* 128.571% */
+margin-top: 150px;
+margin-left: 220px;
+margin-bottom: 20px;
+padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .section4 {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+        margin-bottom: 20px; 
+    }
+    .section4__tittle {
+        font-size: 24px; 
+        margin-left: 0; 
+    }
+    
+}
+
+.section4__paragraph {
+    display: flex;
+width: 410px;
+height: 16px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #4F5665;
+font-family: Rubik;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+margin-left: 222px;
+}
+
+.section4__button {
+    width: 250px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #F53838;
+color: white;
+margin-left: 800px;
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 156.25% */
+margin-top: -87px;
+    display: flex;
+    padding-left: 65px;
+    padding-top: 17px;
+}
+
+
+.section4 {
+    margin-left: 150px;
+    background-color: white;
+    width: 1140px;
+    height: 233px;
+    flex-shrink: 0;;
+    border-radius: 10px;
+background: #ffffffdd;
+margin-bottom: -100px;
+}
+@media (max-width: 500px)  { 
+    .section4__tittle {
+        display: flex;
+    width: 371.615px;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #0B132A;
+    font-family: Rubik;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: -250px;
+    margin-left: -144px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    }
+    .section4__paragraph {
+        display: flex;
+    width: 410px;
+    height: 16px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #4F5665;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: -140px;
+}
+    .section4__button{
+        width: 250px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F53838;
+    color: white;
+    margin-left: 230px;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: -87px;
+    display: flex;
+    padding-left: 65px;
+    padding-top: 17px;
+    }
+    }
+

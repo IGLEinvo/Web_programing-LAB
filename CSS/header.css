@@ -1,0 +1,166 @@
+@keyframes changeColor {
+    0% {
+        background-color: white;
+        color: red;
+    }
+
+    100% {
+        background-color: red;
+        color: white;
+    }
+}
+
+.header {
+    background: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: none;
+        width: auto;
+    }
+}
+
+
+.header__nav ul {
+    display: flex;
+    padding-left: 10px;
+}
+
+.header__nav-item1 {
+    margin-left: 150px;
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .header__nav-item1,
+    .header__nav-item {
+        display: none;
+    }
+}
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .header__nav-container {
+        display: none;
+    }
+    .header__nav-container.active {
+        display: flex;
+        float: none;
+        flex-direction: column;
+        text-align: left;
+    }
+}
+.header__nav-item {
+    margin-right: 40px;
+}
+
+.header__nav-item a {
+    font-size: 16px;
+    font-weight: 400;
+    transition: font-size 0.3s, font-weight 0.3s;
+}
+
+.header__nav-item a:hover {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header__nav-item1 a {
+    font-size: 16px;
+    font-weight: 400;
+    transition: font-size 0.3s, font-weight 0.3s;
+}
+
+.header__nav-item1 a:hover {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__tittle {
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 50px;
+    margin-top: -22px;
+}
+
+.header__Sign-In {
+    margin-left: 71px;
+    margin-right: -150px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.header__Sign-Up {
+    color: #F53855;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 1px solid #F53855;
+    background: white;
+    background-color: white;
+    color: red;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.header__Sign-Up:hover {
+    animation: changeColor 0.5s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+
+    .header__Sign-In,
+    .header__Sign-Up {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        margin-left: 570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .header__nav-item a {
+        font-size: 16px;
+        font-weight: 400;
+        transition: font-size 0.3s, font-weight 0.3s;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+}
