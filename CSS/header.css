@@ -14,14 +14,10 @@
     background: url(./images/logo.svg);
     background-repeat: no-repeat;
     background-position: left top;
-
-}
-
-@media (max-width: 768px) {
-    .header {
-        background: none;
-        width: auto;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .header__nav-container {
@@ -29,6 +25,8 @@
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    order: 2;
 }
 
 .header__nav-container li {
@@ -38,82 +36,31 @@
 .header__nav-container a {
     text-decoration: none;
     color: black;
+    font-size: 16px;
+    font-weight: 400;
+    transition: font-size 0.3s, font-weight 0.3s;
 }
 
-/* Hamburger button styles */
+.header__nav-container a:hover {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .burger-menu {
-    display: none;
     font-size: 24px;
     background: none;
     border: none;
-    color: #fff;
+    color: black;
     cursor: pointer;
-}
-
-.header__nav ul {
-    display: flex;
-    padding-left: 10px;
-}
-
-.header__nav-item1 {
-    margin-left: 150px;
-    margin-right: 40px;
-}
-
-/* @media (max-width: 500px) {
-
-    .header__nav-item1,
-    .header__nav-item {
-        display: none;
-    }
-} */
-
-.header__nav-item {
-    margin-right: 40px;
-}
-
-.header__nav-item a {
-    font-size: 16px;
-    font-weight: 400;
-    transition: font-size 0.3s, font-weight 0.3s;
-}
-
-.header__nav-item a:hover {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.header__nav-item1 a {
-    font-size: 16px;
-    font-weight: 400;
-    transition: font-size 0.3s, font-weight 0.3s;
-}
-
-.header__nav-item1 a:hover {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__tittle {
-    font-weight: 700;
-    line-height: normal;
-    margin-left: 50px;
-    margin-top: -22px;
+    display: none;
+    z-index: 2;
+    order: 1;
 }
 
 .header__Sign-In {
-    margin-left: 71px;
-    margin-right: -150px;
     font-style: normal;
     font-weight: 500;
 }
-
 
 .header__Sign-Up {
     color: #F53855;
@@ -126,7 +73,6 @@
     border-radius: 50px;
     border: 1px solid #F53855;
     background: white;
-    background-color: white;
     color: red;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -135,50 +81,38 @@
     animation: changeColor 0.5s ease forwards;
 }
 
-
-@media (max-width: 500px) {
-
+@media (max-width: 768px) {
     .header__Sign-In,
     .header__Sign-Up {
-        margin-top: 10px;
-        margin-bottom: 10px;
+        display: none;
     }
-}
-
-@media (max-width: 500px) {
-    .header {
-        margin-left: 570px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    
+    .burger-menu {
+        display: block;
+        position: absolute;
+        
     }
-}
 
-@media (max-width: 500px) {
     .header__nav-container {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
-        /* Adjust this value to control the vertical position of the menu */
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: #fff;
         z-index: 1;
+        
     }
 
     .header__nav-container.active {
         display: flex;
+        justify-content: flex-start; /* Змінено з "justify-content: center;" */
     }
 
-    .burger-menu {
-        display: block;
-    }
-    .header__nav-item a {
-        font-size: 16px;
-        font-weight: 400;
-        transition: font-size 0.3s, font-weight 0.3s;
-        margin-right: 15px;
-        margin-left: 10px;
+    .burger-menu.active {
+        transform: rotate(90deg);
+        background-color: white; /* Додайте бажаний колір фону */
+        color: black; /* Додайте бажаний колір тексту */
     }
 }

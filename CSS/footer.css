@@ -45,6 +45,7 @@ padding-left: 500px;
         line-height: 22px;
     }
     .footer__socials {
+        display: none;
         margin-left: 0;
         justify-content: flex-start;
     }

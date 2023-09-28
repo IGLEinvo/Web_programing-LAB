@@ -78,20 +78,20 @@ margin-bottom: -100px;
 @media (max-width: 500px)  { 
     .section4__tittle {
         display: flex;
-    width: 371.615px;
-    height: 80px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #0B132A;
-    font-family: Rubik;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 45px;
-    margin-top: -250px;
-    margin-left: -144px;
-    margin-bottom: 20px;
-    padding-top: 50px;
+        width: 303px;
+        height: 80px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 45px;
+        margin-top: -259px;
+        margin-left: -144px;
+        margin-bottom: 79px;
+        padding-top: 0px;
     }
     .section4__paragraph {
         display: flex;
@@ -114,7 +114,7 @@ margin-bottom: -100px;
     border-radius: 10px;
     background: #F53838;
     color: white;
-    margin-left: 230px;
+    margin-left: -144px;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;

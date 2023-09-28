@@ -4,6 +4,7 @@
     background-position: right;
     
 }
+
 @media (max-width: 500px) {
     .hero {
         background: none;
@@ -11,7 +12,7 @@
     }
 }
 .hero__inner {
-    width: 550px;
+    width: 450px;
     padding-top: 150px;
     padding-bottom: 168px;
 }
@@ -53,6 +54,7 @@
         padding-bottom: 15px;
     }
     .hero__tittle {
+        margin-top: 90px;
         font-size: 30px;
         line-height: 40px;
     }
@@ -68,7 +70,7 @@
         line-height: 22px;
     }
     .hero__inner {
-        width: 550px;
+        width: 212px;
     padding-top: 15px;
     padding-bottom: 0px;
     margin-left: 623px
