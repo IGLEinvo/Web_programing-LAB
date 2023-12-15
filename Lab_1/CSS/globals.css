@@ -1,0 +1,23 @@
+body {
+    color: #0B132A;
+    font-family: Rubik;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #0B132A;
+}
+
+li {
+    display: block;
+}
+
+p {
+    margin: 0;
+}
