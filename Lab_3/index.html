@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CRUD App</h1>
+
+    <h2>Додати коштовний камінь</h2>
+    <form id="addForm">
+        <input type="text" id="title" placeholder="Назва" required>
+        <input type="text" id="description" placeholder="Опис" required>
+        <input type="number" id="price" placeholder="Ціна" required>
+        <input type="file" id="image" accept="image/*" required>
+        <button type="submit">Додати</button>
+    </form>
+
+    <h2>Пошук коштовних каменів</h2>
+    <input type="text" id="searchInput" placeholder="Пошук...">
+    <input type="number" id="minPrice" placeholder="Мінімальна ціна">
+    <input type="number" id="maxPrice" placeholder="Максимальна ціна">
+    <button id="searchButton">Пошук</button>
+    <button id="cancelButton">Скасувати</button>
+
+    <h2>Список:</h2>
+    <ul id="itemList"></ul>
+
+    <p id="totalPrice"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
