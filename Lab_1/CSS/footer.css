@@ -1,0 +1,36 @@
+.footer {
+    margin-top: 150px;
+    width: 1440px;
+height: 247px;
+flex-shrink: 0;
+background: #F6F5F5;
+}
+
+.footer__nav {
+display: flex;
+padding-top: 100px;
+}
+
+.footer__year {
+    color: #AFB5C0;
+font-family: Rubik;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 187.5% */
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 450px;
+}
+
+.footer__tittle {
+    color: #0B132A;
+font-family: Rubik;
+font-size: 20px;
+font-weight: 500;
+position: relative;
+padding-left: 500px;
+}

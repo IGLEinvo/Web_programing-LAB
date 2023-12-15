@@ -1,0 +1,54 @@
+.header {
+    background: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    
+}
+
+.header__nav ul {
+    display: flex;
+    padding-left: 10px;
+}
+
+.header__nav-item1 {
+    margin-left: 150px;
+    margin-right: 40px;
+}
+
+.header__nav-item {
+    margin-right: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__tittle {
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 50px;
+    margin-top: -22px;
+}
+
+.header__Sign-In {
+    margin-left: 71px;
+    margin-right: -150px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.header__Sign-Up {
+    color: #F53855;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    width: 150px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 1px solid #F53855;
+    background: white;
+}
